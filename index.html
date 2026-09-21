@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mara Vilhosa e o Sabor — Salgados Artesanais | Itaim Paulista</title>
+<meta name="description" content="Salgados artesanais de família para família no Jardim dos Ipês. Monte seu cento ou combo degustação, retire no balcão ou peça nas plataformas. A partir de R$2.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#211004;--bg2:#2e1607;--cream:#fff6e9;--ink:#fff6e9;--mut:#e3c9a6;--gold:#d99a2b;--terra:#c0521e;--card:#2e1607;--ln:rgba(255,246,233,.16);--r:22px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;margin:0;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(50rem 26rem at 85% -5%,rgba(217,154,43,.20),transparent);pointer-events:none}
+::selection{background:var(--gold);color:#211004}
+a{color:inherit}
+.d{font-family:Fraunces,serif;font-weight:900;line-height:.95;letter-spacing:-.02em}
+.top{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.9rem 4vw;border-bottom:1px solid transparent;transition:.3s}
+.top.f{background:rgba(33,16,4,.9);backdrop-filter:blur(12px);border-color:var(--ln)}
+.brand{font-family:Fraunces,serif;font-weight:900;font-size:1.2rem;text-decoration:none}
+.brand em{font-style:normal;color:var(--gold)}
+.nav{display:flex;gap:1.6rem}
+.nav a{text-decoration:none;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+.nav a:hover{color:var(--gold)}
+.cta{background:var(--gold);color:#211004;border:0;border-radius:999px;padding:.75rem 1.5rem;font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;font-family:inherit}
+.hero{min-height:92svh;display:flex;flex-direction:column;justify-content:flex-end;padding:16vh 4vw 4vh;position:relative}
+.kick{display:inline-block;font-size:.75rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(217,154,43,.6);border-radius:999px;padding:.55rem 1.1rem;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.6rem,9vw,8rem);margin:0}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{max-width:36rem;color:var(--mut);line-height:1.65;font-size:clamp(1rem,1.5vw,1.15rem)}
+.row{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.6rem}
+.bt{display:inline-block;border-radius:999px;padding:1rem 2rem;font-weight:800;font-size:.84rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid transparent;font-family:inherit}
+.bt1{background:var(--gold);color:#211004}
+.bt2{border-color:var(--ln);color:var(--ink)}
+.bt2:hover{border-color:var(--gold);color:var(--gold)}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);margin-top:2.6rem}
+.strip div{padding:1.1rem 1rem;border-left:1px solid var(--ln)}
+.strip div:first-child{border-left:0;padding-left:0}
+.strip b{font-family:Fraunces,serif;font-size:1.3rem;display:block}
+.strip span{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
+.mode{display:flex;background:#170b03;border:1px solid var(--ln);border-radius:999px;padding:.3rem;margin:0 4vw;gap:.3rem}
+.mode button{flex:1;border:0;background:none;color:var(--mut);border-radius:999px;padding:.9rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;font-family:inherit;font-size:.82rem}
+.mode button.on{background:var(--gold);color:#211004}
+.sec{padding:8vh 4vw}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--ln);padding-bottom:1rem;margin-bottom:2rem;gap:1rem}
+.sec-h h2{font-family:Fraunces,serif;font-size:clamp(1.8rem,4.5vw,3.2rem);margin:0;font-weight:900}
+.sec-h span{color:var(--mut);font-size:.75rem;letter-spacing:.28em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.item{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:1.6rem;display:flex;flex-direction:column;gap:.6rem}
+.item e{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.item h3{font-family:Fraunces,serif;font-size:1.5rem;margin:.2rem 0}
+.item p{color:var(--mut);line-height:1.6;margin:0;font-size:.95rem}
+.item f{display:flex;justify-content:space-between;align-items:center;margin-top:.8rem;gap:.8rem;flex-wrap:wrap}
+.item f b{font-family:Fraunces,serif;font-size:1.5rem;color:var(--gold)}
+.qty{display:flex;align-items:center;gap:.7rem}
+.qty button{width:42px;height:42px;border-radius:50%;border:1px solid var(--ln);background:none;color:var(--ink);font-size:1.25rem;cursor:pointer}
+.qty button:hover{border-color:var(--gold)}
+.qty b{min-width:2ch;text-align:center}
+.combo{background:linear-gradient(135deg,#2e1607,#3d1f08);border:1px solid rgba(217,154,43,.5);border-radius:26px;margin:0 4vw;padding:3rem 2.4rem}
+.combo h2{font-family:Fraunces,serif;font-size:clamp(1.7rem,4vw,2.8rem);margin:0 0 .5rem;font-weight:900}
+.combo h2 em{font-style:normal;color:var(--gold)}
+.combo>p{color:var(--mut);margin:0 0 1.4rem}
+.qz{display:none}
+.qz.on{display:block;animation:fd .4s ease}
+@keyframes fd{from{opacity:0;transform:translateY(12px)}}
+.qz h3{margin:0 0 1rem}
+.opt{display:flex;gap:.7rem;flex-wrap:wrap}
+.opt button{background:#170b03;border:1px solid var(--ln);color:var(--ink);border-radius:999px;padding:.95rem 1.6rem;font-weight:700;cursor:pointer;font-family:inherit}
+.opt button:hover{border-color:var(--gold);color:var(--gold)}
+.res{display:none;text-align:center}
+.res.on{display:block}
+.res b{font-family:Fraunces,serif;font-size:clamp(1.8rem,5vw,3rem);color:var(--gold);display:block}
+.res p{color:var(--mut);max-width:32rem;margin:1rem auto;line-height:1.65}
+.cart{position:sticky;bottom:1rem;z-index:120;margin:1rem 4vw;background:var(--gold);color:#211004;border-radius:18px;padding:1.1rem 1.4rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;box-shadow:0 18px 45px rgba(0,0,0,.5)}
+.cart b{font-family:Fraunces,serif;font-size:1.25rem}
+.cart small{display:block;font-weight:600}
+.cart div.btns{display:flex;gap:.6rem;flex-wrap:wrap}
+.cart button{border:0;border-radius:99px;padding:.85rem 1.4rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:inherit;font-size:.78rem}
+.bw{background:#211004;color:#fff}
+.bo{background:none;border:2px solid #211004 !important;color:#211004 !important}
+.proof{display:flex;gap:1rem;overflow-x:auto;padding:0 4vw 1rem;scroll-snap-type:x mandatory}
+.proof figure{min-width:min(420px,84vw);background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:1.6rem;margin:0;scroll-snap-align:start}
+.proof blockquote{margin:0 0 .8rem;font-family:Fraunces,serif;font-size:1.25rem;line-height:1.4}
+.proof figcaption{color:var(--mut);font-size:.85rem;letter-spacing:.15em;text-transform:uppercase}
+.fq{border-bottom:1px solid var(--ln)}
+.fq button{width:100%;background:none;border:0;color:var(--ink);display:flex;justify-content:space-between;padding:1.3rem 0;font-weight:700;font-size:1.05rem;cursor:pointer;font-family:inherit;text-align:left}
+.fq div{max-height:0;overflow:hidden;transition:max-height .35s ease;color:var(--mut);line-height:1.7}
+.fq div p{margin:0 0 1.3rem;max-width:46rem}
+footer{padding:8vh 4vw 2rem;border-top:1px solid var(--ln);margin-top:6vh}
+footer h2{font-family:Fraunces,serif;font-size:clamp(2.4rem,9vw,7rem);margin:0;font-weight:900}
+footer h2 em{font-style:normal;color:var(--gold)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin:2.4rem 0;padding:1.6rem 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.cols h4{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);margin:0 0 .8rem}
+.cols p,.cols a{line-height:2;text-decoration:none}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media(max-width:1000px){.nav{display:none}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.cart{flex-direction:column;text-align:center}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001s !important;transition-duration:.001s !important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+<a class="brand" href="#inicio">MARA VILHOSA <em>e o sabor</em></a>
+<nav class="nav"><a href="#cardapio">Cardápio</a><a href="#monta">IA monta</a><a href="#retirada">Retirada</a><a href="#faq">Dúvidas</a></nav>
+<a class="cta" href="#cardapio">Pedir agora</a>
+</header>
+
+<section class="hero" id="inicio">
+<span class="kick">Família empreendedora • Jardim dos Ipês</span>
+<h1 class="d">Não é só salgado, <em>é Mara Vilhosa.</em></h1>
+<p>Salgados artesanais feitos à mão, no tamanho ideal da sua necessidade. Monte clicando, retire no balcão ou receba via plataformas. Eles cozinham — a plataforma resolve o resto.</p>
+<div class="row">
+<a class="bt bt1" href="#cardapio">Montar pedido</a>
+<a class="bt bt2" href="https://www.ifood.com.br/delivery/sao-paulo-sp/mara-vilhosa-salgados-jardim-dos-ipes/589033f2-2156-43ec-bd85-8a1af168f99e" target="_blank" rel="noopener">Pedir no iFood</a>
+<a class="bt bt2" href="https://whatsmenu.com.br/maravinhosasalgados" target="_blank" rel="noopener">Cardápio WhatsMenu</a>
+</div>
+<div class="strip">
+<div><b>3 toques</b><span>pedido pronto</span></div>
+<div><b>R$2+</b><span>unidade</span></div>
+<div><b>Retirada</b><span>sem taxa</span></div>
+<div><b>Artesanal</b><span>feito à mão</span></div>
+</div>
+</section>
+
+<div class="mode" role="tablist" aria-label="Modo">
+<button id="mFome" class="on">Modo fome — hoje</button>
+<button id="mFesta">Modo festa — cento</button>
+</div>
+
+<section class="sec" id="cardapio">
+<div class="sec-h rv"><h2>Cardápio</h2><span>clique nos + e some no carrinho</span></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="combo rv" id="monta">
+<h2 class="d">Em dúvida? <em>A IA monta.</em></h2>
+<p>2 perguntas e sai a indicação com o pedido pronto. Sem cadastro, sem app.</p>
+<div class="qz on" id="q1"><h3>É pra agora ou pra festa?</h3><div class="opt"><button data-k="fome">Só minha fome</button><button data-k="degustar">Quero degustar</button><button data-k="festa">É festa / encomenda</button></div></div>
+<div class="qz" id="q2"><h3>Alguma restrição?</h3><div class="opt"><button data-d="nenhuma">Como de tudo</button><button data-d="sem-gluten">Sem glúten</button><button data-d="variar">Quero variar</button></div></div>
+<div class="res" id="qr"><b id="qres">Combo Degustação</b><p id="qtxt"></p><div class="row" style="justify-content:center"><a class="bt bt1" id="qgo" href="#" target="_blank" rel="noopener">Pedir esse no zap →</a></div></div>
+</section>
+
+<div class="cart" id="cart">
+<div><b id="ctotal">R$ 0</b><small id="citems">Carrinho vazio — clique nos +</small></div>
+<div class="btns">
+<button class="bw" id="cRet">Retirar no balcão →</button>
+<button class="bo" id="cPlat">Ver plataformas</button>
+</div>
+</div>
+
+<section class="sec" id="retirada">
+<div class="sec-h rv"><h2>Retirada sem taxa</h2><span>Av. Dos Ipês, 1302 B</span></div>
+<div class="rv"><p style="color:var(--mut);line-height:1.7;max-width:46rem;margin:0">Retire e ganhe o atendimento da família + brinde da semana quando disponível (ex.: Gini nostálgica no Combo Degustação). Entrega só via plataformas: <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/mara-vilhosa-salgados-jardim-dos-ipes/589033f2-2156-43ec-bd85-8a1af168f99e" target="_blank" rel="noopener">iFood</a> e <a href="https://whatsmenu.com.br/maravinhosasalgados" target="_blank" rel="noopener">WhatsMenu</a>. Delivery com salgados a partir de R$2 às sex/sáb 19h–22h. Para festa, chame com 24h de antecedência no <a href="https://wa.me/5511989272470" target="_blank" rel="noopener">(11) 98927-2470</a>.</p></div>
+</section>
+
+<section id="prova">
+<div class="sec-h rv" style="margin:0 4vw 1.4rem"><h2>Quem provou</h2><span>prova real do Instagram</span></div>
+<div class="proof">
+<figure class="rv"><blockquote>“Salgados é da @mara_vilhosa_e_o_sabor. Recomendadíssimo. Ainda mandaram suquinho de brinde.”</blockquote><figcaption>Cliente Adriana • destaque Opinião</figcaption></figure>
+<figure class="rv"><blockquote>“Faça a festa e deixe o salgado por nossa conta.”</blockquote><figcaption>Cento e festa • caixa MS</figcaption></figure>
+<figure class="rv"><blockquote>“Salgado artesanal fresquinho, no tamanho ideal, sem excessos, sem desperdício.”</blockquote><figcaption>Combo Degustação + bebida presente</figcaption></figure>
+</div>
+</section>
+
+<section class="sec" id="faq">
+<div class="sec-h rv"><h2>Dúvidas</h2><span>faq</span></div>
+<div class="rv" id="fqlist">
+<div class="fq"><button>Vocês entregam? <span>+</span></button><div><p>Entrega só pelas plataformas (iFood e WhatsMenu), sex/sáb 19h–22h. Fora disso, retirada no balcão Av. Dos Ipês, 1302 B — sem taxa e com brinde quando disponível.</p></div></div>
+<div class="fq"><button>Como monto o cento? <span>+</span></button><div><p>Use o Modo Festa aqui no site ou chame no <a href="https://wa.me/5511989272470" target="_blank" rel="noopener">WhatsApp</a> com 24h de antecedência. Misturamos coxinha, kibe, bolinha de queijo e empada no tamanho ideal.</p></div></div>
+<div class="fq"><button>Tem sem glúten? <span>+</span></button><div><p>Sim — pão de queijo sem glúten, sem conservante/corante/aroma, feito com queijo meia cura. Pergunte o lote do dia.</p></div></div>
+<div class="fq"><button>Como pago? <span>+</span></button><div><p>Na retirada: Pix ou cartão. Nas plataformas: pagamento do próprio app. Encomenda de festa: 50% na reserva via Pix.</p></div></div>
+</div>
+</section>
+
+<footer>
+<h2 class="d">Bora de <em>salgado?</em></h2>
+<div class="cols">
+<div><h4>Casa</h4><p>Av. Dos Ipês, 1302 B<br>São Paulo 08161-142<br><a href="https://instagram.com/mara_vilhosa_e_o_sabor/" target="_blank" rel="noopener">@mara_vilhosa_e_o_sabor</a></p></div>
+<div><h4>Pede</h4><p><a href="https://wa.me/5511989272470" target="_blank" rel="noopener">WhatsApp (11) 98927-2470</a><br><a href="https://www.ifood.com.br/delivery/sao-paulo-sp/mara-vilhosa-salgados-jardim-dos-ipes/589033f2-2156-43ec-bd85-8a1af168f99e" target="_blank" rel="noopener">iFood</a><br><a href="https://whatsmenu.com.br/maravinhosasalgados" target="_blank" rel="noopener">WhatsMenu</a></p></div>
+<div><h4>Plataforma</h4><p>Monta em 3 toques<br>IA indica o combo<br>Retirada sem taxa</p></div>
+</div>
+<div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--mut);font-size:.85rem"><span>© <i id="yr">2026</i> Mara Vilhosa e o Sabor. De família para família.</span><span>Conceitos próprios inspirados em padrões premiados — traço original MS.</span></div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var $=function(s,c){return (c||document).querySelector(s)};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var W="5511989272470";
+var MENU=[
+{id:"cox",tag:"Mais pedido",name:"Coxinha de frango",desc:"Crocante por fora, cremosa por dentro. A clássica que sustenta a casa.",price:2.5,festa:true},
+{id:"kib",tag:"Mais pedido",name:"Kibe recheado",desc:"Teste de produto aprovado — tempero caseiro, casquinha firme.",price:2.5,festa:true},
+{id:"bol",tag:"Unidade",name:"Bolinha de queijo",desc:"Pequena, quente e puxa-queijo. Ideal pro cento misto.",price:2,festa:true},
+{id:"emp",tag:"Forno",name:"Empada de frango",desc:"Massa que desmancha, recheio generoso. Fornada do dia.",price:6,festa:false},
+{id:"pq",tag:"Sem glúten",name:"Pão de queijo sem glúten",desc:"Sem conservante, corante e aroma. Queijo meia cura. Bão demais.",price:4,festa:false},
+{id:"deg",tag:"Para degustar",name:"Combo Degustação + brinde",desc:"12 salgados sortidos na medida + bebida nostálgica de presente.",price:29,festa:false},
+{id:"cx50",tag:"Família",name:"Caixa MS 50 sortidos",desc:"Caixa octogonal MS com 50 sortidos. Fim de semana resolvido.",price:120,festa:true},
+{id:"cento",tag:"Festa",name:"Cento festa sortido",desc:"100 salgados sortidos. Faça a festa e deixe o salgado por nossa conta.",price:230,festa:true}
+];
+var grid=$("#grid");
+MENU.forEach(function(m){
+var a=document.createElement("article");a.className="item rv";a.dataset.festa=m.festa?"1":"0";
+a.innerHTML='<e>'+m.tag+'</e><h3>'+m.name+'</h3><p>'+m.desc+'</p><f><b>R$ '+String(m.price).replace(".",",")+'</b><div class="qty"><button data-id="'+m.id+'" data-d="-1" aria-label="Menos">−</button><b id="q-'+m.id+'">0</b><button data-id="'+m.id+'" data-d="1" aria-label="Mais">+</button></div></f>';
+grid.appendChild(a);
+});
+function setMode(festa){
+$("#mFesta").classList.toggle("on",!!festa);$("#mFome").classList.toggle("on",!festa);
+$$("#grid .item").forEach(function(el){el.style.display=(!festa||el.dataset.festa==="1")?"flex":"none"});
+}
+$("#mFome").onclick=function(){setMode(false)};
+$("#mFesta").onclick=function(){setMode(true)};
+var CART={};
+var BRL=function(v){return v.toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:v<10?1:0})};
+function draw(){
+var tot=0,parts=[];
+Object.keys(CART).forEach(function(id){var q=CART[id];if(q>0){var m=MENU.filter(function(x){return x.id===id})[0];tot+=q*m.price;parts.push(q+"x "+m.name)}});
+$("#ctotal").textContent=BRL(tot);
+$("#citems").textContent=parts.length?parts.join(", "):"Carrinho vazio — clique nos +";
+Object.keys(CART).forEach(function(id){var el=document.getElementById("q-"+id);if(el)el.textContent=CART[id]});
+}
+$$(".qty button").forEach(function(b){b.addEventListener("click",function(){
+var id=b.getAttribute("data-id"),d=parseInt(b.getAttribute("data-d"),10);
+CART[id]=Math.max(0,(CART[id]||0)+d);draw();
+})});
+function msg(){var p=[];Object.keys(CART).forEach(function(id){if(CART[id]>0){var m=MENU.filter(function(x){return x.id===id})[0];p.push(CART[id]+"x "+m.name)}});return p.length?p.join(", ")+" — Total "+$("#ctotal").textContent:"Olá! Quero montar um pedido."}
+$("#cRet").onclick=function(){if(!Object.keys(CART).some(function(k){return CART[k]>0})){alert("Monte clicando nos + primeiro.");return}window.open("https://wa.me/"+W+"?text="+encodeURIComponent("Olá! Sou Mara Vilhosa — RETIRADA no balcão. Meu pedido: "+msg()),"_blank")};
+$("#cPlat").onclick=function(){window.open("https://www.ifood.com.br/delivery/sao-paulo-sp/mara-vilhosa-salgados-jardim-dos-ipes/589033f2-2156-43ec-bd85-8a1af168f99e","_blank")};
+var K="",D="";
+function rec(){
+var r="Combo Degustação + brinde",w="Na medida, sem desperdício, com bebida presente nostálgica.";
+if(K==="festa"){r="Cento festa sortido";w="100 sortidos para a festa render sem faltar nem sobrar."}
+else if(D==="sem-gluten"){r="Pão de queijo sem glúten";w="Lote do dia sem glúten, sem conservante — confirme no zap."}
+else if(K==="fome"){r="Coxinha de frango";w="Fresquinha, crocante e no tamanho ideal da sua fome."}
+$("#qres").textContent=r;$("#qtxt").textContent=w;
+$("#qgo").href="https://wa.me/"+W+"?text="+encodeURIComponent("Olá! A IA indicou "+r+" ("+K+", "+D+"). Quero pedir!");
+$("#qr").classList.add("on");
+}
+$$("#q1 button").forEach(function(b){b.onclick=function(){K=b.getAttribute("data-k");$("#q1").classList.remove("on");$("#q2").classList.add("on")}});
+$$("#q2 button").forEach(function(b){b.onclick=function(){D=b.getAttribute("data-d");$("#q2").classList.remove("on");rec()}});
+var KB=[
+{k:["entrega","ifood","whatsmenu","delivery"],a:"Entrega só via iFood e WhatsMenu, sex/sáb 19h–22h. Fora disso, retirada no balcão sem taxa."},
+{k:["retirada","retirar","endereco","onde"],a:"Av. Dos Ipês, 1302 B, São Paulo. Chame no (11) 98927-2470 com o código do pedido."},
+{k:["cento","festa","encomenda"],a:"Cento festa R$ 230 com 100 sortidos. Peça com 24h de antecedência no zap."},
+{k:["degustacao","combo","brinde","gini"],a:"Combo Degustação R$ 29 com 12 sortidos + bebida nostálgica de presente."},
+{k:["sem gluten","gluten","pao de queijo"],a:"Pão de queijo sem glúten R$ 4, sem conservante/corante. Confirme o lote do dia."},
+{k:["preco","valor","quanto"],a:"A partir de R$ 2: bolinha R$ 2, coxinha/kibe R$ 2,50, empada R$ 6, degustação R$ 29, caixa 50 R$ 120, cento R$ 230."},
+{k:["hora","horario","abre"],a:"Delivery sex/sáb 19h–22h. Retirada e encomendas combinadas no zap."},
+{k:["pagamento","pix","cartao"],a:"Retirada: Pix ou cartão. Plataformas: pagamento no app. Festa: 50% na reserva."}
+];
+var css="#ab{position:fixed;right:1.1rem;bottom:1.1rem;z-index:150;width:58px;height:58px;border-radius:50%;border:0;background:var(--gold);color:#211004;font-size:1.4rem;cursor:pointer;font-family:inherit;box-shadow:0 8px 28px rgba(0,0,0,.45)}#ap{position:fixed;right:1.1rem;bottom:5rem;z-index:150;width:min(340px,90vw);background:#170b03;color:#fff6e9;border:1px solid rgba(255,246,233,.2);border-radius:18px;overflow:hidden;display:none;flex-direction:column}#ap.on{display:flex}#ah{padding:.85rem 1rem;font-weight:800;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;background:var(--gold);color:#211004;display:flex;justify-content:space-between}#am{padding:1rem;display:flex;flex-direction:column;gap:.55rem;font-size:.9rem;line-height:1.55;max-height:280px;overflow-y:auto}#am .u{align-self:flex-end;background:rgba(255,255,255,.12);border-radius:12px 12px 3px 12px;padding:.55rem .85rem;max-width:85%}#am .b{align-self:flex-start;background:rgba(255,255,255,.07);border-radius:12px 12px 12px 3px;padding:.55rem .85rem}#af{display:flex;border-top:1px solid rgba(255,255,255,.12)}#ai{flex:1;background:none;border:0;color:#fff;padding:.85rem 1rem;font-family:inherit;outline:none;min-width:0}#as{background:none;border:0;color:var(--gold);font-size:1.25rem;padding:0 1rem;cursor:pointer}";
+var st=document.createElement("style");st.textContent=css;document.head.appendChild(st);
+var w=document.createElement("div");w.innerHTML='<button id="ab" aria-label="Assistente">✦</button><div id="ap"><div id="ah"><span>Mara IA</span><span id="ax" style="cursor:pointer">×</span></div><div id="am"></div><div id="af"><input id="ai" maxlength="200" placeholder="Preço? Entrega? Cento?" autocomplete="off"><button id="as" aria-label="Enviar">→</button></div></div>';document.body.appendChild(w);
+var said=false;
+function say(t,who){var m=document.getElementById("am");var d=document.createElement("div");d.className=who;d.textContent=t;m.appendChild(d);m.scrollTop=m.scrollHeight}
+var BP=[/ignor(e|a)/i,/<\s*script/i,/javascript\s*:/i,/union\s+select/i,/drop\s+table/i,/\.\.\//,/(api[_-]?key|secret)\s*:/i,/(cpf|cvv|card number)/i,/rm -rf/i];
+function blocked(t){for(var i=0;i<BP.length;i++)if(BP[i].test(t))return true;return false}
+function ans(t){t=String(t||"").slice(0,200);if(blocked(t)){say("Não posso ajudar com isso. Pergunte sobre cardápio, entrega ou retirada.","b");return}var l=t.toLowerCase(),b=null,s=0;KB.forEach(function(e){var n=0;e.k.forEach(function(k){if(l.indexOf(k)>=0)n+=k.length});if(n>s){s=n;b=e}});say(b?b.a:"Chama no zap (11) 98927-2470 que a família responde.","b")}
+function send(){var i=document.getElementById("ai");var t=i.value.trim();if(!t)return;i.value="";say(t,"u");setTimeout(function(){ans(t)},300)}
+$("#ab").onclick=function(){$("#ap").classList.toggle("on");if($("#ap").classList.contains("on")&&!said){said=true;say("Olá! Sou a Mara IA. Pergunte preço, cento, entrega ou retirada.","b")}};
+$("#ax").onclick=function(){$("#ap").classList.remove("on")};
+$("#as").onclick=send;
+$("#ai").addEventListener("keydown",function(e){if(e.key==="Enter")send()});
+var hd=$("#top");window.addEventListener("scroll",function(){hd.classList.toggle("f",window.scrollY>40)},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.12});
+$$(".rv").forEach(function(el){io.observe(el)});
+$$(".fq").forEach(function(f){var b=$("button",f),d=$("div",f);b.onclick=function(){var o=f.style.maxH==="1";$$(".fq div").forEach(function(x){x.style.maxHeight="0"});$$(".fq").forEach(function(x){x.style.maxH=""});if(!o){d.style.maxHeight=d.scrollHeight+"px";f.style.maxH="1"}}});
+$("#yr").textContent=new Date().getFullYear();
+draw();
+})();
+</script>
+</body>
+</html>
