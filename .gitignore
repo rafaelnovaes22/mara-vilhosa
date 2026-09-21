@@ -1,2 +1,4 @@
 node_modules/
 .venv/
+*.bundle
+mara-vilhosa-para-outra-maquina.zip
