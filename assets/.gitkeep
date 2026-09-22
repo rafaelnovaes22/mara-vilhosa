@@ -1,0 +1,1 @@
+# PORQUÊ: mantém assets/ versionada para o COPY do Dockerfile não quebrar com dir vazio.

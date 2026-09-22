@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mara Vilhosa e o Sabor — Salgados Artesanais | Itaim Paulista</title>
 <meta name="description" content="Salgados artesanais de família para família no Jardim dos Ipês. Monte seu cento ou combo degustação, retire no balcão ou peça nas plataformas. A partir de R$2.">
+<meta name="theme-color" content="#211004">
+<meta property="og:title" content="Mara Vilhosa e o Sabor — Não é só salgado">
+<meta property="og:description" content="De família para família. Retirada no balcão sem taxa ou iFood/WhatsMenu. A partir de R$2.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23211004'/%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23d99a2b' stroke-width='2'/%3E%3Ctext x='32' y='41' font-family='Georgia' font-weight='bold' font-size='24' fill='%23d99a2b' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -94,9 +99,20 @@ footer h2 em{font-style:normal;color:var(--gold)}
 .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin:2.4rem 0;padding:1.6rem 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
 .cols h4{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);margin:0 0 .8rem}
 .cols p,.cols a{line-height:2;text-decoration:none}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+ .rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
 .rv.on{opacity:1;transform:none}
-@media(max-width:1000px){.nav{display:none}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.cart{flex-direction:column;text-align:center}}
+/* PORQUÊ assinatura única: carimbo quente MS, o selo da família no balcão. */
+.stamp{position:absolute;top:12vh;right:5vw;width:110px;height:110px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Fraunces,serif;font-weight:900;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);transform:rotate(10deg);animation:spin 24s linear infinite;opacity:.9}
+@keyframes spin{to{transform:rotate(370deg)}}
+/* PORQUÊ retirada é o fluxo herói: 3 passos numerados, sem app, sem taxa. */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.6rem}
+.step{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:1.4rem}
+.step b{font-family:Fraunces,serif;font-size:2rem;color:var(--gold);display:block}
+.step h3{margin:.4rem 0;font-size:1.05rem}
+.step p{color:var(--mut);line-height:1.6;margin:0;font-size:.92rem}
+.lote{display:flex;gap:.8rem;align-items:center;background:#170b03;border:1px dashed rgba(217,154,43,.6);border-radius:16px;padding:1rem 1.3rem;margin-top:1.6rem;color:var(--mut);font-size:.92rem;line-height:1.6}
+.lote b{color:var(--gold)}
+@media(max-width:1000px){.nav{display:none}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.cart{flex-direction:column;text-align:center}.steps{grid-template-columns:1fr}.stamp{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.001s !important;transition-duration:.001s !important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -108,6 +124,7 @@ footer h2 em{font-style:normal;color:var(--gold)}
 </header>
 
 <section class="hero" id="inicio">
+<div class="stamp" aria-hidden="true">de família para família</div>
 <span class="kick">Família empreendedora • Jardim dos Ipês</span>
 <h1 class="d">Não é só salgado, <em>é Mara Vilhosa.</em></h1>
 <p>Salgados artesanais feitos à mão, no tamanho ideal da sua necessidade. Monte clicando, retire no balcão ou receba via plataformas. Eles cozinham — a plataforma resolve o resto.</p>
@@ -152,7 +169,12 @@ footer h2 em{font-style:normal;color:var(--gold)}
 
 <section class="sec" id="retirada">
 <div class="sec-h rv"><h2>Retirada sem taxa</h2><span>Av. Dos Ipês, 1302 B</span></div>
-<div class="rv"><p style="color:var(--mut);line-height:1.7;max-width:46rem;margin:0">Retire e ganhe o atendimento da família + brinde da semana quando disponível (ex.: Gini nostálgica no Combo Degustação). Entrega só via plataformas: <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/mara-vilhosa-salgados-jardim-dos-ipes/589033f2-2156-43ec-bd85-8a1af168f99e" target="_blank" rel="noopener">iFood</a> e <a href="https://whatsmenu.com.br/maravinhosasalgados" target="_blank" rel="noopener">WhatsMenu</a>. Delivery com salgados a partir de R$2 às sex/sáb 19h–22h. Para festa, chame com 24h de antecedência no <a href="https://wa.me/5511989272470" target="_blank" rel="noopener">(11) 98927-2470</a>.</p></div>
+<div class="steps rv">
+<div class="step"><b>1</b><h3>Monte clicando</h3><p>Some nos + do cardápio ou deixe a IA indicar. Sem cadastro, sem app.</p></div>
+<div class="step"><b>2</b><h3>Receba o código no zap</h3><p>Toque em Retirar no balcão e o pedido chega pronto no <a href="https://wa.me/5511989272470" target="_blank" rel="noopener">WhatsApp da família</a>.</p></div>
+<div class="step"><b>3</b><h3>Retire e ganhe o brinde</h3><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Dos+Ipes,+1302,+Sao+Paulo" target="_blank" rel="noopener">Av. Dos Ipês, 1302 B</a>, sem taxa, com brinde da semana quando houver. Entrega só via <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/mara-vilhosa-salgados-jardim-dos-ipes/589033f2-2156-43ec-bd85-8a1af168f99e" target="_blank" rel="noopener">iFood</a> e <a href="https://whatsmenu.com.br/maravinhosasalgados" target="_blank" rel="noopener">WhatsMenu</a> (sex/sáb 19h–22h). Festa com 24h de antecedência.</p></div>
+</div>
+<div class="lote rv"><span aria-hidden="true">●</span><p style="margin:0"><b>Lote do dia:</b> pão de queijo sem glúten de queijo meia cura, sem conservante. Pergunte o lote no zap antes de sair de casa.</p></div>
 </section>
 
 <section id="prova">
@@ -244,9 +266,9 @@ var KB=[
 {k:["entrega","ifood","whatsmenu","delivery"],a:"Entrega só via iFood e WhatsMenu, sex/sáb 19h–22h. Fora disso, retirada no balcão sem taxa."},
 {k:["retirada","retirar","endereco","onde"],a:"Av. Dos Ipês, 1302 B, São Paulo. Chame no (11) 98927-2470 com o código do pedido."},
 {k:["cento","festa","encomenda"],a:"Cento festa R$ 230 com 100 sortidos. Peça com 24h de antecedência no zap."},
-{k:["degustacao","combo","brinde","gini"],a:"Combo Degustação R$ 29 com 12 sortidos + bebida nostálgica de presente."},
+ {k:["degustacao","combo","brinde","gini"],a:"Combo Degustação R$ 29 com 12 sortidos + brinde bebida nostálgica de presente."},
 {k:["sem gluten","gluten","pao de queijo"],a:"Pão de queijo sem glúten R$ 4, sem conservante/corante. Confirme o lote do dia."},
-{k:["preco","valor","quanto"],a:"A partir de R$ 2: bolinha R$ 2, coxinha/kibe R$ 2,50, empada R$ 6, degustação R$ 29, caixa 50 R$ 120, cento R$ 230."},
+ {k:["preco","valor","quanto","custa"],a:"A partir de R$ 2: bolinha R$ 2, coxinha/kibe R$ 2,50, empada R$ 6, degustação R$ 29, caixa 50 R$ 120, cento R$ 230 (peça o cento com 24h no zap)."},
 {k:["hora","horario","abre"],a:"Delivery sex/sáb 19h–22h. Retirada e encomendas combinadas no zap."},
 {k:["pagamento","pix","cartao"],a:"Retirada: Pix ou cartão. Plataformas: pagamento no app. Festa: 50% na reserva."}
 ];
@@ -257,7 +279,8 @@ var said=false;
 function say(t,who){var m=document.getElementById("am");var d=document.createElement("div");d.className=who;d.textContent=t;m.appendChild(d);m.scrollTop=m.scrollHeight}
 var BP=[/ignor(e|a)/i,/<\s*script/i,/javascript\s*:/i,/union\s+select/i,/drop\s+table/i,/\.\.\//,/(api[_-]?key|secret)\s*:/i,/(cpf|cvv|card number)/i,/rm -rf/i];
 function blocked(t){for(var i=0;i<BP.length;i++)if(BP[i].test(t))return true;return false}
-function ans(t){t=String(t||"").slice(0,200);if(blocked(t)){say("Não posso ajudar com isso. Pergunte sobre cardápio, entrega ou retirada.","b");return}var l=t.toLowerCase(),b=null,s=0;KB.forEach(function(e){var n=0;e.k.forEach(function(k){if(l.indexOf(k)>=0)n+=k.length});if(n>s){s=n;b=e}});say(b?b.a:"Chama no zap (11) 98927-2470 que a família responde.","b")}
+ function norm(t){return String(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+ function ans(t){t=String(t||"").slice(0,200);if(blocked(t)){say("Não posso ajudar com isso. Pergunte sobre cardápio, entrega ou retirada.","b");return}var l=norm(t),b=null,s=0;KB.forEach(function(e){var n=0;e.k.forEach(function(k){var nk=norm(k);if(l.indexOf(nk)>=0)n+=nk.length});if(n>s){s=n;b=e}});say(b?b.a:"Chama no zap (11) 98927-2470 que a família responde.","b")}
 function send(){var i=document.getElementById("ai");var t=i.value.trim();if(!t)return;i.value="";say(t,"u");setTimeout(function(){ans(t)},300)}
 $("#ab").onclick=function(){$("#ap").classList.toggle("on");if($("#ap").classList.contains("on")&&!said){said=true;say("Olá! Sou a Mara IA. Pergunte preço, cento, entrega ou retirada.","b")}};
 $("#ax").onclick=function(){$("#ap").classList.remove("on")};
