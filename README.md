@@ -15,7 +15,11 @@ Novo repo, traço original MS — padrões premiados abstraídos de forma irrast
 ```powershell
 python -m http.server 8000
 ```
-Deploy: Railway, Dockerfile nginx porta 8080 (igual `lanchonete-ai`).
+Verificação comando único (HTML, 5 evals do assistente, infra /health):
+```powershell
+python scripts/verify.py
+```
+Deploy: Railway, Dockerfile nginx porta 8080, `/health` como healthcheck.
 
 ## Links reais
 - Whats: https://wa.me/5511989272470
